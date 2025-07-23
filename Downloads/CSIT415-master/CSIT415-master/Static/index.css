@@ -1,0 +1,226 @@
+:root {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #161a1d;
+    background-color: #f5f3f4;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.header {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: bolder;
+    font-size: 90px;
+    margin-top: 20px;
+    /* top: 0;
+    left: 0;
+    position: absolute; */
+    margin: 0;
+    color: #131416;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+    .header {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-height: 900px) {
+    .header {
+        font-size: 60px;
+    }
+}
+
+.logo {
+    width: fit-content;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 150px;
+    /* max-width: 170px;
+    min-width: 135px; */
+    height: auto;
+}
+
+.loginWrapper {
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    min-height: 100vh;
+    /* width: 100vw; */
+    justify-content: center;
+    align-items: center;
+    background-size: 300% 300%;
+    background-color: #a18cb8;
+    /* background-image: linear-gradient(228deg, rgba(245, 243, 244, 1) 0%, rgba(219, 57, 62, 1) 60%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite; */
+}
+
+/* @-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.login-box {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: #f0e5dc;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.login-title {
+    margin: 20px 0 10px 0;
+    /* padding-left: 70px; */
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.login-subtitle {
+    font-size: 16px;
+    color: dark gray;
+    margin-top: 0px;
+    display: block;
+    padding-left: 2px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.title-field {
+    padding-left: 12px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    color: black;
+}
+
+.input-field {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 30px;
+    margin-left: 2px;
+    color: black;
+    background-color: #ffffff;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 80%;
+    margin-left: 2px;
+    height: 40px;
+    background-color: #a18cb8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform ease 250ms, background-color ease 250ms;
+    align-self: center;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #310a5b;
+    transform: scale(1.1);
+}
+
+.submit-button:active {
+    background-color: #131416;
+    transform: scale(1);
+}
+
+.register-text {
+    margin-left: 2px;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.form-switch {
+    font-family: Helvetica, system-ui;
+    margin: 20px 0;
+}
+
+.form-switch a {
+    color: blue;
+    transition: color ease 250ms;
+}
+.form-switch a:visited {
+    color: rgb(234, 16, 234);
+}
+.form-switch a:hover {
+    color: rgb(94, 20, 243);
+}
+
+@media only screen and (max-height: 900px) {
+    .login-title {
+        font-size: 40px;
+        margin: 10px 0 10px 0;
+    }
+    .login-subtitle {
+        font-size: 20px;
+    }
+    /* .logo img {
+        height: 15vh;
+        width: auto;
+    } */
+    .login-box {
+        padding: 10px 30px;
+    }
+    .submit-button {
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+.course-catalog {
+    border: 2px solid black;
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}

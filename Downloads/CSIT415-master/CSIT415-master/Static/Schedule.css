@@ -1,0 +1,97 @@
+.schedule {
+    padding-right: 10px;
+    width: 100%;
+}
+.schedule-cell-empty {
+    grid-column: 1;
+    border: none;
+    background-color: transparent;
+}
+.schedule-container {
+    font-family: "Helvetica", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr);
+    grid-auto-rows: 60px;
+    /* border-top: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0); */
+    gap: 0px;
+}
+.schedule-header {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.schedule-week {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.schedule-week-control {
+    display: flex;
+}
+.schedule-week-control {
+    cursor: pointer;
+}
+
+.schedule-week-control:hover {
+    text-decoration: underline;
+}
+
+.schedule-header-today {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 0 10px;
+}
+
+.weekday {
+    font-size: 16px;
+}
+.days {
+    font-size: 14px;
+    color: #555;
+}
+.schedule-time {
+    grid-column: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #ffffff;
+    /* padding: 18px 0; */
+    height: 100%;
+    border: 1px solid #000000;
+    /* align-self: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-border {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 250px;
+    left: 20px;
+    padding: 0;
+}
+
+.course-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    width: 350px;
+}

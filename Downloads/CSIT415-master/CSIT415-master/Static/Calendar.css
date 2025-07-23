@@ -1,0 +1,105 @@
+.calendar-sidebar {
+    top: 0px; /* Adjust the distance from the top */
+    left: 0px; /* Adjust the distance from the left */
+    width: fit-content;
+    height: 100vh;
+
+    transition: transform 0.5s ease;
+    background-color: #e0d3ef;
+}
+
+.calendar-sidebar.collapsed {
+    transform: translateX(-100%);
+    position: absolute;
+}
+
+.calendar-sidebar-options {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calendar-sidebar-options button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    transition: transform 0.5s ease;
+}
+
+.calendar-sidebar.collapsed button {
+    transform: translateX(30px);
+}
+
+.calendar {
+    padding-right: 10px;
+    width: 320px;
+}
+.calendar-header {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.calendar-header-month {
+    font-weight: 600;
+}
+.calendar-header-controls {
+    display: flex;
+}
+.calendar-header-control {
+    cursor: pointer;
+}
+.calendar-header-control:hover {
+    text-decoration: underline;
+}
+.calendar-header-today {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 0 10px;
+}
+
+.calendar-weeks-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.calendar-weeks-grid-cell {
+    text-align: center;
+    color: black;
+}
+.calendar-grid-cell-inactive {
+    color: rgb(141, 141, 141) !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    border-top: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+}
+.calendar-grid-cell {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.calendar-grid-cell:hover {
+    background: #9ba3bf;
+}
+.calendar-grid-cell-active {
+    background: #9ba3bf;
+}
+.schedule {
+    margin-left: 10px;
+}
+.schedule-headline {
+    font-weight: 600;
+    margin-bottom: 30px;
+}

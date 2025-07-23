@@ -1,0 +1,21 @@
+.inner-cells {
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
+    border-right: 1px solid rgba(148, 147, 147, 0.34);
+    height: 100%;
+}
+.inner-cells-highlight {
+    background: #7c90da;
+}
+
+.meeting-cell {
+    /* border: 1px solid #4a4a4a; */
+    border-radius: 4px;
+    background-color: #9ba3bf;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    cursor: pointer;
+    z-index: 3;
+}
